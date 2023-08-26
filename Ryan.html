@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <title>Employee Profile - Delacruz Vanryan M</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #1E2839, #ff9d00);
+            color: #ffffff;
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 187, 0, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            animation: flow-in 1s ease;
+        }
+
+        .pic {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease-in-out; /* Added transition property */
+        }
+
+        .pic img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+
+        .text {
+            flex: 2;
+            padding: 20px;
+            border-left: 2px solid #ffffff;
+            margin-left: 20px;
+            transition: transform 0.3s ease-in-out; /* Added transition property */
+            user-select: none; /* Prevent text selection */
+        }
+
+        .pic:hover {
+            transform: scale(1.1); /* Enlarge the image on hover */
+        }
+
+        .text:hover {
+            transform: scale(1.05); /* Slightly enlarge the text on hover */
+        }
+
+        .message {
+            background-color: rgba(255, 187, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem; /* Decrease font size for name */
+            margin-bottom: 15px;
+            font-family: 'Arial Black', sans-serif; /* Change font for name */
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 5px 0;
+        }
+
+        .name {
+            font-family: 'Arial Black', sans-serif; /* Change font for name */
+            font-size: 2.5rem; /* Decrease font size for name */
+            margin-bottom: 10px;
+        }
+
+        @keyframes flow-in {
+            0% { transform: translateY(-50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+            <img src="34.jpg" alt="Profile Picture">
+        </div>
+        <div class="text">
+            <h1 class="name">Delacruz Vanryan M,</h1>
+            <div class="message">
+                <p><em>"I am an IT professional with a passion for coding and game development. I graduated from Cupang Senior High School and I'm currently pursuing a Bachelor of Science in Information Technology. My experience in creating Roblox games since a young age has shaped my skills in coding and databases. I have successfully designed databases for businesses like local stores. Apart from my technical skills, I also enjoy playing the guitar. I'm dedicated to continuous improvement and achieving my goals."</em></p>
+            </div>
+            <div class="info-box">
+                <p><strong>Age:</strong> 20 years</p>
+                <p><strong>Date of Birth:</strong> February 05, 2003</p>
+                <p><strong>Blood Type:</strong> O+</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Curse:</strong> Bachelor of Science in Information Technology</p>
+                <p><strong>Year Collage:</strong> Second</p>
+            </div>
+            <div class="info-box">
+                <p><strong>Lives:</strong> Purok2 Aquinio Compd, Cupang Muntinlupa City</p>
+            </div>
+            <div class="message">
+                <p><em><strong>Motto</strong>"Embrace the Journey, Ignite Possibilities."</em></p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
